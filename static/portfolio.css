@@ -18,7 +18,7 @@
 .header{
     width: 100%;
     height: 60vh;
-    background-image: linear-gradient(rgba(0,0,0,0.877),rgba(0,0,0,0.5)),url(make-up-kit.jpg);
+    background-color: #090213;
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -239,3 +239,109 @@ nav ul li a:hover::after{
     font-size: 1.3rem;
     color: #bbb882;
   }
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    nav ul {
+      text-align: center;
+    }
+  
+    nav ul li {
+      display: block;
+      padding: 10px 0;
+    }
+  
+    .header {
+      height: auto;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+  
+    .head h1 {
+      font-size: 45px;
+      padding: 0 1rem;
+    }
+  
+    .flex {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .flex img {
+      width: 80%;
+      margin: 20px 0;
+      transform: scale(1);
+    }
+  
+    .background {
+      height: auto;
+      padding: 2rem 1rem;
+      margin: 2rem 0;
+      background-attachment: scroll;
+    }
+  
+    .sides {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .mid-side {
+      padding-left: 0;
+      padding-top: 1rem;
+    }
+  
+    .last-side {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  
+    .bef {
+      flex-direction: column;
+      margin: 2rem 1rem;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .bef img {
+      transform: scale(1);
+      width: 100%;
+    }
+  
+    .bef h1 {
+      font-size: 30px;
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  
+    .social {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+  
+    .icons,
+    .content {
+      flex: 1 1 100%;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .content h5 {
+      justify-content: center;
+    }
+    
+  }
+  
+  @media (max-width: 768px) {
+    a.button {
+      display: none;
+    }
+  }
+  
+  
